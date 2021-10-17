@@ -22,11 +22,11 @@ const Meals = ({navigation, route}) => {
         return <Error />
     }
 
-    const onPress = (name) => {
-        navigation.navigate("Detail", {name})
+    const onPress = (idMeal) => {
+        navigation.navigate("Detail", {idMeal})
     }
 
-    const renderMeals = ({item}) => <MealsCard meal={item} onPress={() => onPress(name)}/>
+    const renderMeals = ({item}) => <MealsCard meal={item} onPress={() => onPress(item.idMeal)}/>
 
     return(
         <SafeAreaView>

@@ -3,11 +3,15 @@ import { StyleSheet, Dimensions } from 'react-native'
 const deviceSize = Dimensions.get("window")
 
 export default StyleSheet.create({
+    cont: {
+        backgroundColor: "#FF6565"
+    },
     container: {
         flexDirection: "column",
         margin: 10,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: ""
     },
     image: {
         minWidth: deviceSize.width * 0.95,
